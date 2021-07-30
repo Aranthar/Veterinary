@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before
+  box-sizing: border-box
+
+html
+  font-size: 16px
+
+p
+  margin: 0
+
+a
+  text-decoration: none
+  color: inherit
+
+body
+  margin: 0
+  padding: 0
+
+  font-family: $font--poppins
+
+.section, .footer
+  padding: 7.5em 0
+    
+  &__inner--alternative
+    display: flex
+    flex-direction: row-reverse
+
+    .service__text
+      align-items: flex-end
+      text-align: right
+
+      margin-right: 0
+      margin-left: 120px
+
+    .service__img::before
+      right: -40px
+      left: auto
+
+.wrapper
+  max-width: 1440px
+  display: block
+  margin: 0 auto
+
+.container
+  width: 1200px
+  display: block
+  margin: 0 auto
+
+.section--yellow
+  background-color: $background--color

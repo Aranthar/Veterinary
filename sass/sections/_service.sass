@@ -1,0 +1,93 @@
+.service
+
+  &__inner
+    display: flex
+  
+  &__text
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    color: #000
+
+    max-width: 560px
+
+    margin-right: 120px
+
+  &__title
+    font-size: 50px
+    font-weight: 600
+
+    padding-bottom: 20px
+
+  &__subtitle
+    font-size: 29px
+    font-weight: 400
+
+    padding-bottom: 50px
+
+  &__img 
+    position: relative
+
+    width: 500px
+    height: 500px
+
+    .overlay
+      display: flex
+      justify-content: center
+      align-items: center
+
+      position: absolute
+      top: 0
+      left: 0
+
+      width: 100%
+      height: 100%
+
+      z-index: 3
+
+      opacity: 0
+
+      background-color: rgba(#daac00, .7)
+
+      transition: opacity .3s
+      
+      cursor: pointer
+
+      &:hover
+        opacity: 1
+
+      svg
+        width: 85px
+        height: 85px
+
+        color: #fff
+
+    img
+      position: relative
+      z-index: 2
+
+      object-fit: cover
+      object-position: center
+
+      width: 100%
+      height: 100%
+
+      overflow: hidden
+      
+
+    &::before
+      content: ''
+      display: block
+
+      position: absolute
+      z-index: 1
+
+      left: -40px
+      bottom: -35px
+
+      width: 250px
+      height: 200px
+
+      background-color: #fcc302
+

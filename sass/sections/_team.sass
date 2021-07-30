@@ -1,0 +1,70 @@
+.section
+
+  .workers
+    display: flex
+    justify-content: space-between
+
+    .worker
+      display: flex
+
+      flex: 33.3333%
+      align-items: center
+      flex-direction: column
+
+      color: #000
+
+      margin-right: 65px
+
+      &:last-child
+        margin-right: 0
+
+      &__img
+
+        padding-bottom: 20px
+
+      &__title
+        font-size: 29px
+        font-weight: 700
+
+        text-transform: capitalize
+
+      &__profession
+        font-size: 25px
+        font-weight: 400
+
+        text-transform: uppercase
+
+      &__network
+        
+        ul
+          color: #fff
+
+          display: flex
+
+          list-style-type: none
+          padding-left: 0
+
+          li
+            font-size: 27px
+
+            padding-right: 25px
+
+            &:last-child
+              padding-right: 0
+
+            a
+              display: flex
+              justify-content: center
+              align-items: center
+
+              width: 45px
+              height: 45px
+
+              border-radius: 50%
+
+              background-color: $background--color
+
+              transition: background-color .3s
+
+              &:hover
+                background-color: #343434
